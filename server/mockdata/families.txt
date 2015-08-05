@@ -1,0 +1,62 @@
+{
+     "name": "Stark",
+    "location": "Kings landing",
+    "members": [
+      {
+        "name": "Eddard Stark"
+      },
+      {
+        "name": "Catelyn Stark"
+      },
+      {
+         "name": "Robb Stark"
+      },
+      {
+         "name": "Sansa Stark"
+      },
+      {
+         "name": "Arya Stark"
+      },
+      {
+         "name": "Bran Stark"
+      },
+      {
+         "name": "Rickon Stark"
+      },
+      {
+         "name": "John Snow"
+      }
+    ]
+  }
+
+
+{
+     "name": "Baratheon",
+    "location": "Kings landing",
+    "members": [
+      {
+        "name": "Robert Baratheon"
+      },
+      {
+        "name": "Cersei Lannister"
+      },
+      {
+         "name": "Gendry"
+      },
+      {
+         "name": "Joffrey Baratheon"
+      },
+      {
+         "name": "Myrcella Baratheon"
+      },
+      {
+         "name": "Stannis Baratheon"
+      },
+      {
+         "name": "Renly Baratheon"
+      },
+      {
+         "name": "Shireen Baratheon"
+      }
+    ]
+  }

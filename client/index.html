@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valar Morgulas</title>
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body data-ng-app="gotapp">
+    <div class="container" data-ng-controller="FamilyController">
+        <section class="row" style="padding:50px 10px">
+            <div class="col-md-6" style="height:500px;overflow-y:scroll">
+                <ul ng-repeat = "family in families">
+                    <li><span>Name:</span><span>{{family.name}}</span></li>
+                    <li><span>Location:</span><span>{{family.location}}</span></li>
+                    <li><span>Members</span>
+                        <ul>
+                            <li ng-repeat="member in family.members">{{member.name}}</li>
+                        </ul>
+                    </li>
+                </ul>         
+            </div>
+            <div class="col-md-6">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Family Name</label>
+                        <input type="text" class="form-control" id="name" 
+                        ng-model="family.name" placeholder="Family Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="location" 
+                        ng-model="family.location" placeholder="Location">
+                      </div>
+                      <div class="form-group">
+                        <label>Members</label>
+                        <span style="padding: 0px 10px;height: 20px;"
+                        class="btn btn-warning" ng-click="addAnother()">+</span>
+                        <ul class="list-unstyled">
+                            <li ng-repeat="member in family.members" id="memberList">
+                                <input type="text" class="form-control" id="member"
+                                    ng-model="member.name" placeholder="Member Name" >        
+                            </li>
+                        </ul>
+                      </div>
+                      <button type="button" ng-click="addFamily(family)"
+                      class="btn btn-success">Add Family</button>
+                </form>
+            </div>
+        </section>
+           
+           
+           
+    </div>
+    
+    
+    
+    <script src="plugins/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="plugins/angular/angular.js"></script>
+    <script src="plugins/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="plugins/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    
+    
+    
+    <!-- Family Module -->
+    <script src="app/family/family.module.js"></script>    
+    <script src="app/family/family.js"></script>
+    <!-- BootStrapping App -->
+    <script src="app/app.module.js"></script>
+</body>
+</html>

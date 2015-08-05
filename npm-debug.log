@@ -1,0 +1,226 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'update',
+1 verbose cli   '-g',
+1 verbose cli   'bower' ]
+2 info using npm@2.2.0
+3 info using node@v0.10.35
+4 silly mapToRegistry name bower
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry uri https://registry.npmjs.org/bower
+8 verbose request uri https://registry.npmjs.org/bower
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 14:50:05
+11 verbose request id 8aca15f009e8ae07
+12 verbose etag "CALOF14QBRWLPH50UPQETQNNW"
+13 http request GET https://registry.npmjs.org/bower
+14 silly mapToRegistry name bower
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/bower
+18 verbose request uri https://registry.npmjs.org/bower
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 14:50:05
+21 verbose etag "CALOF14QBRWLPH50UPQETQNNW"
+22 http request GET https://registry.npmjs.org/bower
+23 http 200 https://registry.npmjs.org/bower
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"99ROKBKO7EECA5RGJQMGLHXGA"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '112434',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Sun, 21 Jun 2015 09:20:05 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-sin6921-SIN',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '2',
+24 silly get     'x-timer': 'S1434878404.068099,VS0,VE1054',
+24 silly get     vary: 'Accept' } ]
+25 http 200 https://registry.npmjs.org/bower
+26 silly get cb [ 200,
+26 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"99ROKBKO7EECA5RGJQMGLHXGA"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'cache-control': 'max-age=60',
+26 silly get     'content-length': '112434',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Sun, 21 Jun 2015 09:20:05 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-sin6921-SIN',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '2',
+26 silly get     'x-timer': 'S1434878404.516689,VS0,VE605',
+26 silly get     vary: 'Accept' } ]
+27 info outdated updating [ [ 'c:\\Program Files\\nodejs\\node_modules\\bower-installer',
+27 info outdated     'bower',
+27 info outdated     '1.3.12',
+27 info outdated     '1.3.12',
+27 info outdated     '1.4.1',
+27 info outdated     '~1.3.8' ] ]
+28 verbose install where, what [ 'c:\\Program Files\\nodejs\\node_modules\\bower-installer',
+28 verbose install   [ 'bower@1.3.12' ] ]
+29 silly cache add args [ 'bower@1.3.12', null ]
+30 verbose cache add spec bower@1.3.12
+31 silly cache add parsed spec { raw: 'bower@1.3.12',
+31 silly cache add   scope: null,
+31 silly cache add   name: 'bower',
+31 silly cache add   rawSpec: '1.3.12',
+31 silly cache add   spec: '1.3.12',
+31 silly cache add   type: 'version' }
+32 verbose addNamed bower@1.3.12
+33 silly addNamed semver.valid 1.3.12
+34 silly addNamed semver.validRange 1.3.12
+35 silly mapToRegistry name bower
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry uri https://registry.npmjs.org/bower
+39 verbose addNameVersion registry:https://registry.npmjs.org/bower not in flight; fetching
+40 verbose get https://registry.npmjs.org/bower not expired, no request
+41 silly cache afterAdd bower@1.3.12
+42 verbose afterAdd C:\Users\Satheesh Valluru\AppData\Roaming\npm-cache\bower\1.3.12\package\package.json not in flight; writing
+43 verbose afterAdd C:\Users\Satheesh Valluru\AppData\Roaming\npm-cache\bower\1.3.12\package\package.json written
+44 silly install resolved [ { name: 'bower',
+44 silly install resolved     version: '1.3.12',
+44 silly install resolved     description: 'The browser package manager',
+44 silly install resolved     author: { name: 'Twitter' },
+44 silly install resolved     licenses: [ [Object] ],
+44 silly install resolved     repository: { type: 'git', url: 'https://github.com/bower/bower' },
+44 silly install resolved     main: 'lib',
+44 silly install resolved     homepage: 'http://bower.io',
+44 silly install resolved     engines: { node: '>=0.10.0' },
+44 silly install resolved     dependencies:
+44 silly install resolved      { abbrev: '~1.0.4',
+44 silly install resolved        archy: '0.0.2',
+44 silly install resolved        'bower-config': '~0.5.2',
+44 silly install resolved        'bower-endpoint-parser': '~0.2.2',
+44 silly install resolved        'bower-json': '~0.4.0',
+44 silly install resolved        'bower-logger': '~0.2.2',
+44 silly install resolved        'bower-registry-client': '~0.2.0',
+44 silly install resolved        cardinal: '0.4.0',
+44 silly install resolved        chalk: '0.5.0',
+44 silly install resolved        chmodr: '0.1.0',
+44 silly install resolved        'decompress-zip': '0.0.8',
+44 silly install resolved        fstream: '~1.0.2',
+44 silly install resolved        'fstream-ignore': '~1.0.1',
+44 silly install resolved        glob: '~4.0.2',
+44 silly install resolved        'graceful-fs': '~3.0.1',
+44 silly install resolved        handlebars: '~2.0.0',
+44 silly install resolved        inquirer: '0.7.1',
+44 silly install resolved        insight: '0.4.3',
+44 silly install resolved        'is-root': '~1.0.0',
+44 silly install resolved        junk: '~1.0.0',
+44 silly install resolved        lockfile: '~1.0.0',
+44 silly install resolved        'lru-cache': '~2.5.0',
+44 silly install resolved        mkdirp: '0.5.0',
+44 silly install resolved        mout: '~0.9.0',
+44 silly install resolved        nopt: '~3.0.0',
+44 silly install resolved        opn: '~1.0.0',
+44 silly install resolved        osenv: '0.1.0',
+44 silly install resolved        'p-throttler': '0.1.0',
+44 silly install resolved        promptly: '0.2.0',
+44 silly install resolved        q: '~1.0.1',
+44 silly install resolved        request: '~2.42.0',
+44 silly install resolved        'request-progress': '0.3.0',
+44 silly install resolved        retry: '0.6.0',
+44 silly install resolved        rimraf: '~2.2.0',
+44 silly install resolved        semver: '~2.3.0',
+44 silly install resolved        'shell-quote': '~1.4.1',
+44 silly install resolved        'stringify-object': '~1.0.0',
+44 silly install resolved        'tar-fs': '0.5.2',
+44 silly install resolved        tmp: '0.0.23',
+44 silly install resolved        'update-notifier': '0.2.0',
+44 silly install resolved        which: '~1.0.5' },
+44 silly install resolved     devDependencies:
+44 silly install resolved      { coveralls: '~2.11.0',
+44 silly install resolved        'expect.js': '~0.3.1',
+44 silly install resolved        grunt: '~0.4.4',
+44 silly install resolved        'grunt-cli': '^0.1.13',
+44 silly install resolved        'grunt-contrib-jshint': '~0.10.0',
+44 silly install resolved        'grunt-contrib-watch': '~0.6.1',
+44 silly install resolved        'grunt-exec': '~0.4.2',
+44 silly install resolved        'grunt-simple-mocha': '~0.4.0',
+44 silly install resolved        istanbul: '~0.3.2',
+44 silly install resolved        'load-grunt-tasks': '~0.6.0',
+44 silly install resolved        mocha: '~1.21.4',
+44 silly install resolved        nock: '~0.46.0',
+44 silly install resolved        'node-uuid': '~1.4.1',
+44 silly install resolved        proxyquire: '~1.0.1' },
+44 silly install resolved     scripts: { test: 'grunt test' },
+44 silly install resolved     bin: { bower: 'bin/bower' },
+44 silly install resolved     preferGlobal: true,
+44 silly install resolved     gitHead: 'b26c072f0db054a1902ec4d2e3726dbf8a1c799a',
+44 silly install resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+44 silly install resolved     _id: 'bower@1.3.12',
+44 silly install resolved     _shasum: '37de0edb3904baf90aee13384a1a379a05ee214c',
+44 silly install resolved     _from: 'bower@1.3.12',
+44 silly install resolved     _npmVersion: '2.0.0',
+44 silly install resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+44 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+44 silly install resolved     dist:
+44 silly install resolved      { shasum: '37de0edb3904baf90aee13384a1a379a05ee214c',
+44 silly install resolved        tarball: 'http://registry.npmjs.org/bower/-/bower-1.3.12.tgz' },
+44 silly install resolved     directories: {},
+44 silly install resolved     _resolved: 'https://registry.npmjs.org/bower/-/bower-1.3.12.tgz',
+44 silly install resolved     readme: 'ERROR: No README data found!' } ]
+45 info install bower@1.3.12 into c:\Program Files\nodejs\node_modules\bower-installer
+46 info installOne bower@1.3.12
+47 verbose installOne of bower to c:\Program Files\nodejs\node_modules\bower-installer not in flight; installing
+48 verbose lock using C:\Users\Satheesh Valluru\AppData\Roaming\npm-cache\_locks\bower-7eee2a7432127080.lock for c:\Program Files\nodejs\node_modules\bower-installer\node_modules\bower
+49 silly install write writing bower 1.3.12 to c:\Program Files\nodejs\node_modules\bower-installer\node_modules\bower
+50 silly cache addNamed cb bower@1.3.12
+51 verbose unbuild node_modules\bower-installer\node_modules\bower
+52 info preuninstall bower@1.3.12
+53 info uninstall bower@1.3.12
+54 verbose unbuild rmStuff bower@1.3.12 from c:\Program Files\nodejs\node_modules
+55 verbose unbuild rmStuff in c:\Program Files\nodejs\node_modules\bower-installer\node_modules
+56 verbose gentlyRm verifying that c:\Program Files\nodejs is managed by npm
+57 silly isManaged c:\Program Files\nodejs is not inside c:\Program Files\nodejs\node_modules
+58 silly isManaged c:\Program Files\nodejs is not inside c:\Program Files\nodejs\node_modules
+59 silly isManaged c:\Program Files\nodejs is inside c:\Program Files\nodejs
+60 silly gentlyRm c:\Program Files\nodejs is managed by npm
+61 silly gentlyRm c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd is under c:\Program Files\nodejs
+62 verbose gentlyRm vacuuming c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd up to c:\Program Files\nodejs
+63 silly gentlyRm removing c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd
+64 verbose unlock done using C:\Users\Satheesh Valluru\AppData\Roaming\npm-cache\_locks\bower-7eee2a7432127080.lock for c:\Program Files\nodejs\node_modules\bower-installer\node_modules\bower
+65 verbose stack Error: EPERM, unlink 'c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd'
+66 verbose cwd c:\Users\Satheesh Valluru\Documents\git\my-mean-app
+67 error Windows_NT 6.2.9200
+68 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "update" "-g" "bower"
+69 error node v0.10.35
+70 error npm  v2.2.0
+71 error path c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd
+72 error code EPERM
+73 error errno 50
+74 error Error: EPERM, unlink 'c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd'
+74 error  { [Error: EPERM, unlink 'c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd']
+74 error   errno: 50,
+74 error   code: 'EPERM',
+74 error   path: 'c:\\Program Files\\nodejs\\node_modules\\bower-installer\\node_modules\\.bin\\bower.cmd' }
+75 error Please try running this command again as root/Administrator.
+76 verbose exit [ 50, true ]
+77 verbose unbuild node_modules\bower-installer\node_modules\bower
+78 info preuninstall bower@1.3.12
+79 info uninstall bower@1.3.12
+80 verbose unbuild rmStuff bower@1.3.12 from c:\Program Files\nodejs\node_modules
+81 verbose unbuild rmStuff in c:\Program Files\nodejs\node_modules\bower-installer\node_modules
+82 verbose gentlyRm verifying that c:\Program Files\nodejs is managed by npm
+83 silly isManaged c:\Program Files\nodejs is not inside c:\Program Files\nodejs\node_modules
+84 silly isManaged c:\Program Files\nodejs is not inside c:\Program Files\nodejs\node_modules
+85 silly isManaged c:\Program Files\nodejs is inside c:\Program Files\nodejs
+86 silly gentlyRm c:\Program Files\nodejs is managed by npm
+87 silly gentlyRm c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd is under c:\Program Files\nodejs
+88 verbose gentlyRm vacuuming c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd up to c:\Program Files\nodejs
+89 silly gentlyRm removing c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd
+90 error error rolling back Error: EPERM, unlink 'c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd'
+90 error error rolling back  { [Error: EPERM, unlink 'c:\Program Files\nodejs\node_modules\bower-installer\node_modules\.bin\bower.cmd']
+90 error error rolling back   errno: 50,
+90 error error rolling back   code: 'EPERM',
+90 error error rolling back   path: 'c:\\Program Files\\nodejs\\node_modules\\bower-installer\\node_modules\\.bin\\bower.cmd' }

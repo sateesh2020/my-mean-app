@@ -1,0 +1,11 @@
+{
+    "name": "MyMEANApp",
+    "dependencies": {
+        "jquery": "latest",
+        "angular": "latest",
+        "bootstrap": "latest",
+        "angular-bootstrap": "latest",
+        "angular-ui-router": "#master"
+    }
+
+}
